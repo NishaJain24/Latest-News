@@ -1,6 +1,6 @@
-package com.example.newsapp;
+package com.nishajain.tidings;
 
-import com.example.newsapp.Models.HeadlinesModel;
+import com.nishajain.tidings.Models.HeadlinesModel;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

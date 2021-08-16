@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.nishajain.tidings;
 
 import androidx.appcompat.app.AppCompatActivity;
 

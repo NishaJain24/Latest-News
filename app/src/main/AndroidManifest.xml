@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.newsapp">
+    package="com.nishajain.tidings">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/newslogo"
+        android:icon="@mipmap/tidings_logo"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/newslogo"
+        android:roundIcon="@mipmap/tidings_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewsApp">
         <activity android:name=".SplashActivity">

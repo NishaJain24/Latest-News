@@ -1,19 +1,18 @@
-package com.example.newsapp;
+package com.nishajain.tidings;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.newsapp.Models.ArticlesModel;
-import com.example.newsapp.Models.HeadlinesModel;
+import com.nishajain.tidings.Models.ArticlesModel;
+import com.nishajain.tidings.Models.HeadlinesModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,11 +37,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rv = findViewById(R.id.recycler_view);
         swipe = findViewById(R.id.swipe);
-
         search = findViewById(R.id.search);
         etquery = findViewById(R.id.etQuery);
-
-
+        etquery.clearFocus();
 //        getSupportActionBar().hide();
         rv.setLayoutManager(new LinearLayoutManager(this));
         String country = getCountry();
@@ -57,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                etquery.clearFocus();
                 if (!etquery.getText().toString().equals("")) {
                     swipe.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                         @Override

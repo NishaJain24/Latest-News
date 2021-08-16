@@ -1,4 +1,4 @@
-package com.example.newsapp;
+package com.nishajain.tidings;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,14 +13,12 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.newsapp.Models.ArticlesModel;
-import com.squareup.picasso.Picasso;
+import com.nishajain.tidings.Models.ArticlesModel;
 
 import org.ocpsoft.prettytime.PrettyTime;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;

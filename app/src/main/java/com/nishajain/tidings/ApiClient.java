@@ -1,8 +1,5 @@
-package com.example.newsapp;
+package com.nishajain.tidings;
 
-import com.example.newsapp.Models.HeadlinesModel;
-
-import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
